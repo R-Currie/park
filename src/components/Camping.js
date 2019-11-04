@@ -39,7 +39,7 @@ const Camping = () => {
                             <button>Check Availability</button> 
                         </div>
                         <div>
-                            <h2 class="hiking-end">Campsites may close based on weather.</h2>
+                            <h2 className="hiking-end">Campsites may close based on weather.</h2>
                         </div>
                     </div>
                 </div>

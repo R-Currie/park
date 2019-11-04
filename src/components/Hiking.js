@@ -38,7 +38,7 @@ const Hiking = () => {
                             </div>
                         </div>
                         <div>
-                            <h2 class="hiking-end">Have fun and stay safe!</h2>
+                            <h2 className="hiking-end">Have fun and stay safe!</h2>
                         </div>
                     </div>
                 </div>

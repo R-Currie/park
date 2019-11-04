@@ -254,6 +254,20 @@ header nav li{
     margin: 10px;
 }
 
+.boating-detail{
+    display: flex;
+}
+
+.boating-detail img{
+    width: 300px;
+    height: 450px;
+    margin-left: 30px;
+}
+
+.boating-detail h3{
+    margin: 30px 10px;
+}
+
 @keyframes slidefade{
     100%{
         opacity: .9;
