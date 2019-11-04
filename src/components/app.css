@@ -237,6 +237,23 @@ header nav li{
     padding-bottom: 100px;
 }
 
+.camping-detail a{
+    text-decoration: underline;
+}
+
+.campsite{
+    margin: 30px;
+}
+
+.campsite button{
+    color: white;
+    padding: 10px;
+    background-color: #252c57;
+    font-family: sans-serif;
+    font-weight: 100;
+    margin: 10px;
+}
+
 @keyframes slidefade{
     100%{
         opacity: .9;

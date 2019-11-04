@@ -15,7 +15,7 @@ const Hero = () => {
                     </div>
                     <div class="btn-text">Hiking</div>
                 </a>
-                <a href="/hiking" class="btn">
+                <a href="/camping" class="btn">
                     <div>
                         <i class="fa fa-leaf fa-3x"></i>
                     </div>
