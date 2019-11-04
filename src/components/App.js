@@ -5,6 +5,7 @@ import Landing from './Landing';
 import Hiking from './Hiking';
 import Camping from './Camping';
 import Boating from './Boating';
+import Biking from './Biking';
 
 const App = () => {
     return(
@@ -14,6 +15,7 @@ const App = () => {
                 <Route path="/hiking" component={Hiking} />
                 <Route path="/camping" component={Camping} />
                 <Route path="/boating" component={Boating} />
+                <Route path="/biking" component={Biking} />
             </BrowserRouter>
         </div>
     )

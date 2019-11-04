@@ -9,6 +9,7 @@ const Hiking = () => {
             <section className='hero'>
                 <Background />
                 <div className="detail-content">
+                    <a href="/"><i className="fa fa-times fa-2x exit"></i></a>
                     <h2>Hiking in Macondo</h2>
                     <div className="detail">
                         <div>
@@ -38,7 +39,7 @@ const Hiking = () => {
                             </div>
                         </div>
                         <div>
-                            <h2 className="hiking-end">Have fun and stay safe!</h2>
+                            <h2 className="section-end">Have fun and stay safe!</h2>
                         </div>
                     </div>
                 </div>

@@ -9,6 +9,7 @@ const Boating = () => {
             <section className='hero'>
                 <Background />
                 <div className="detail-content">
+                    <a href="/"><i className="fa fa-times fa-2x exit"></i></a>
                     <h2>Boating in Lake Macondo</h2>
                     <div className="detail boating-detail">
                         <img src="https://i.imgur.com/oexkbbn.jpg" alt="canoe"></img>
@@ -18,7 +19,7 @@ const Boating = () => {
                             <h3>Fishing is also permitted with proper liscensing.</h3>
                         </div>
                     </div>
-                    <h2 className="hiking-end">Motors are not allowed, please keep the lake quiet.</h2>
+                    <h2 className="section-end">Motors are not allowed, please keep the lake quiet.</h2>
                 </div>
             </section>
         </div>

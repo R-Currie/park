@@ -27,7 +27,7 @@ const Hero = () => {
                         </div>
                         <div class="btn-text boating">Boating</div>
                     </a>
-                    <a href="/hiking" class="btn">
+                    <a href="/biking" class="btn">
                         <div>
                             <i class="fa fa-bicycle fa-3x"></i>
                         </div>

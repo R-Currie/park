@@ -9,6 +9,7 @@ const Camping = () => {
             <section className='hero'>
                 <Background />
                 <div className="detail-content">
+                    <a href="/"><i className="fa fa-times fa-2x exit"></i></a>
                     <h2>Camping in Macondo</h2>
                     <div className="detail camping-detail">
                         <div>
@@ -39,7 +40,7 @@ const Camping = () => {
                             <button>Check Availability</button> 
                         </div>
                         <div>
-                            <h2 className="hiking-end">Campsites may close based on weather.</h2>
+                            <h2 className="section-end">Campsites may close based on weather.</h2>
                         </div>
                     </div>
                 </div>

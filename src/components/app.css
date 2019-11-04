@@ -186,8 +186,8 @@ header nav li{
     animation: 1s slidefade 1s forwards;
     opacity: 0;
     margin-top: 50px;
-    height: 700px;
-    width: 1000px;
+    height: 90vh;
+    width: 65vw;
     background-color: rgba(255, 255, 255, 0.466);
     border-radius: 3%;
     line-height: 1.5;
@@ -198,6 +198,13 @@ header nav li{
     font-size: 2.5em;
     margin-top: 30px;
     margin-bottom: 20px;
+}
+
+.exit{
+    position: fixed;
+    top: 15%;
+    right: 20%;
+    color: #1e2344;
 }
 
 .hiking-flex{
@@ -225,16 +232,16 @@ header nav li{
     margin-top: 20px;
 }
 
+.section-end{
+    padding-bottom: 100px;
+}
+
 .detail a{
     color: #535353;
 }
 
 .thoughtful-hiker{
     margin-right: 50px;
-}
-
-.hiking-end{
-    padding-bottom: 100px;
 }
 
 .camping-detail a{
@@ -256,16 +263,24 @@ header nav li{
 
 .boating-detail{
     display: flex;
+    flex: auto;
 }
 
 .boating-detail img{
-    width: 300px;
+    min-width: 300px;
     height: 450px;
     margin-left: 30px;
 }
 
 .boating-detail h3{
-    margin: 30px 10px;
+    margin-top: 30px;
+    margin-right: 10px;
+}
+
+.biking-detail a{
+    color: #535353;
+    text-decoration: underline;
+    font-size: 24px;
 }
 
 @keyframes slidefade{
