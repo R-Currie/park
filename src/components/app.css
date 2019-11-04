@@ -1,0 +1,245 @@
+@import url("https://fonts.googleapis.com/css?family=Quicksand");
+@import url("https://fonts.googleapis.com/css?family=Oswald");
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font: normal 16px sans-serif;
+    color: #252c57;
+    overflow: hidden;
+}
+
+nav{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+a{
+    text-decoration: none;
+    opacity: 0.75;
+    color: #535353;
+    cursor: pointer;
+}
+
+a:hover{
+    opacity: 1;
+}
+
+a.btn{
+    border-radius: 50%;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    background-color: transparent;
+    opacity: 1;
+    height: 100px;
+    width: 100px;
+    display: block;
+    text-align: center;
+    margin: 0 auto 1.5vh auto;
+    border: 2px solid #1e2344;
+    border-radius: 50%;
+    cursor: pointer;
+    outline: none;
+    text-decoration: none;
+}
+
+a.btn:hover{
+    background-color: rgb(56, 97, 116);
+    opacity: 75%;
+}
+
+.btn i{
+    margin: auto;
+    transform: translateY(5px);
+}
+
+.btn-text{
+    margin-top: 40px;
+    transform: translateY(10px);
+    font-size: 15px;
+}
+
+.btn-text.camping{
+    transform: translateX(-5px) translateY(10px);
+}
+
+.btn-text.boating{
+    transform: translateX(-5px) translateY(10px);
+}
+
+.btns{
+    display: flex;
+}
+
+.grid{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+hr{
+    width: 250px;
+    height: 3px;
+    background-color: #3f51b5;
+    border: 0;
+    margin: 50px;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 0 80px;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px 100px 0;
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    color: #535353;
+    opacity: 0.75;
+}
+
+.brand{
+    font-family: "Quicksand", sans-serif;
+    opacity: 0.75;
+}
+
+.brand:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+
+header nav{
+    display: flex;
+    margin-right: -15px;
+}
+
+header nav li{
+    margin: 0 10px;
+}
+
+.hero{
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    min-height: 100vh;
+    z-index: 0;
+}
+
+.hero .background{
+    background-image: url(./main.jpg);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    z-index: -1;
+    background-color: #80a3db;
+}
+
+.hero h1{
+    font-size: 60px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    font-family: "Oswald";
+    letter-spacing: 5px;
+}
+
+.hero h3{
+    font-size: 30px;
+    font-weight: 100;
+    margin-bottom: 40px;
+    font-family: "Quicksand";
+}
+
+.hero a{
+    padding: 20px;
+    color: white;
+}
+
+.hero-content{
+    opacity: 0;
+    margin-top: 100px;
+    animation: 1s slidefade 1s forwards;
+}
+
+.detail-content{
+    color: #252c57;
+    animation: 1s slidefade 1s forwards;
+    opacity: 0;
+    margin-top: 50px;
+    height: 700px;
+    width: 1000px;
+    background-color: rgba(255, 255, 255, 0.466);
+    border-radius: 3%;
+    line-height: 1.5;
+    overflow: auto;
+}
+
+.detail-content h2{
+    font-size: 2.5em;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.hiking-flex{
+    display: flex;
+    justify-content: left;
+    margin-top: 5%;
+}
+
+.detail h3{
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.detail li{
+    margin-left: 20%;
+    text-align: left;
+    font-size: 18px;
+    list-style: circle;
+}
+
+.detail img{
+    width: 700px;
+    height: 400px;
+    border-radius: 5%;
+    margin-top: 20px;
+}
+
+.detail a{
+    color: #535353;
+}
+
+.thoughtful-hiker{
+    margin-right: 50px;
+}
+
+.hiking-end{
+    padding-bottom: 100px;
+}
+
+@keyframes slidefade{
+    100%{
+        opacity: .9;
+        margin: 0;
+    }
+}
