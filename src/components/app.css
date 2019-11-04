@@ -256,6 +256,10 @@ header nav li{
     margin: 30px;
 }
 
+.campsite p{
+    margin: 0 100px;
+}
+
 .campsite button{
     color: white;
     padding: 10px;
@@ -279,6 +283,10 @@ header nav li{
 .boating-detail h3{
     margin-top: 30px;
     margin-right: 10px;
+}
+
+.boating-text{
+    margin-right: 20px;
 }
 
 .biking-text{
