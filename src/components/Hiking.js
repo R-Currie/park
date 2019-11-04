@@ -12,7 +12,7 @@ const Hiking = () => {
                     <a href="/"><i className="fa fa-times fa-2x exit"></i></a>
                     <h2>Hiking in Macondo</h2>
                     <div className="detail">
-                        <div>
+                        <div className="hiking-detail">
                             <h3>Trail maps</h3>
                             <a href="/hiking">Lake Macondo</a>
                             <a href="/hiking">Arcadio Highlands</a>

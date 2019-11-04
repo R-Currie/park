@@ -213,6 +213,10 @@ header nav li{
     margin-top: 5%;
 }
 
+.hiking-detail a{
+    text-decoration: underline;
+}
+
 .detail h3{
     margin-bottom: 10px;
     text-align: center;
