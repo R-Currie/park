@@ -21,10 +21,6 @@ nav{
 
 a{
     text-decoration: none;
-}
-
-a{
-    text-decoration: none;
     opacity: 0.75;
     color: #535353;
     cursor: pointer;
@@ -201,9 +197,9 @@ header nav li{
 }
 
 .exit{
-    position: fixed;
-    top: 15%;
-    right: 20%;
+    float: right;
+    margin-top: 2%;
+    margin-right: 2%;
     color: #1e2344;
 }
 
@@ -230,8 +226,8 @@ header nav li{
 }
 
 .detail img{
-    width: 700px;
-    height: 400px;
+    width: 45vw;
+    height: 50vh;
     border-radius: 5%;
     margin-top: 20px;
 }
