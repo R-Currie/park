@@ -306,3 +306,14 @@ header nav li{
         margin: 0;
     }
 }
+
+@media screen and (max-width: 480px) {
+
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        align-items: stretch;
+    }
+
+}
