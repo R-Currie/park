@@ -300,6 +300,12 @@ header nav li{
     font-size: 24px;
 }
 
+.columnOne, .columnTwo{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
 @keyframes slidefade{
     100%{
         opacity: .9;
@@ -309,11 +315,25 @@ header nav li{
 
 @media screen and (max-width: 480px) {
 
-    .row {
-        display: flex;
-        flex-wrap: wrap;
-        box-sizing: border-box;
-        align-items: stretch;
+    header{
+        flex-direction: column;
+        padding-top: 1%;
+        flex-basis: auto;
     }
+
+    .btns {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .columnOne, .columnTwo{
+        display: flex;
+        flex-direction: column;
+        flex-basis: 100%;
+        flex: 1;
+    }
+    
 
 }
