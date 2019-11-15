@@ -183,7 +183,7 @@ header nav li{
     opacity: 0;
     margin-top: 50px;
     height: 85vh;
-    width: 65vw;
+    width: 70vw;
     background-color: rgba(255, 255, 255, 0.466);
     border-radius: 3%;
     line-height: 1.5;
@@ -313,12 +313,34 @@ header nav li{
     }
 }
 
+@media screen and (max-width: 992px) {
+    .detail-content{
+        width: 90vw;
+    }
+
+    .boating-detail{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .detail img{
+        width: 60vw;
+        height: 40vh;
+        border-radius: 5%;
+        margin-top: 20px;
+    }
+}
+
 @media screen and (max-width: 480px) {
 
     header{
         flex-direction: column;
         padding-top: 1%;
         flex-basis: auto;
+    }
+
+    .btn-text{
+        display: none;
     }
 
     .btns {
@@ -334,6 +356,38 @@ header nav li{
         flex-basis: 100%;
         flex: 1;
     }
+
+    .detail-content{
+        width: 90vw;
+    }
+
+    .boating-detail{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .detail img{
+        width: 70vw;
+        height: 50vh;
+        border-radius: 5%;
+        margin-top: 20px;
+    }
+
+    .hiking-detail a{
+        text-decoration: underline;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hiking-flex{
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        margin-top: 5%;
+    }
     
+    .campsite p{
+        margin: 0 10px;
+    }
 
 }
