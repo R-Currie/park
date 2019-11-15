@@ -54,10 +54,6 @@ a.btn:hover{
     opacity: 75%;
 }
 
-.phone{
-    display: none;
-}
-
 .btn i{
     margin: auto;
     transform: translateY(5px);
@@ -348,8 +344,9 @@ header nav li{
         flex-basis: auto;
     }
 
-    .btn-text{
-        display: none;
+    .hero a{
+        margin-bottom: 50px;
+        margin-top: 20px;
     }
 
     .btns {
@@ -357,6 +354,14 @@ header nav li{
         flex-direction: row;
         flex-wrap: wrap;
         width: 100%;
+    }
+
+    .hero h1{
+        margin-bottom: 5px;
+    }
+
+    .hero h3{
+        margin-bottom: 5px;
     }
 
     .columnOne, .columnTwo{
@@ -394,37 +399,19 @@ header nav li{
         justify-content: left;
         margin-top: 5%;
     }
+
+    .biking-text{
+        padding-bottom: 100px;
+        margin: 20px 0;
+    }
     
     .campsite p{
         margin: 0 10px;
     }
 
-    .phone{
-        display: block;
-        color: white;
+    .boating-detail img{
+        margin: auto;
     }
 
-    .phone-hike{
-        position: fixed;
-        top: 52%;
-        left: 19%;
-    }
-
-    .phone-boat{
-        position: fixed;
-        top: 52%;
-        right: 18%;
-    }
-
-    .phone-camp{
-        position: fixed;
-        top: 88%;
-        left: 16%
-    }
-    .phone-bike{
-        position: fixed;
-        top: 88%;
-        right: 19%;
-    }
 
 }

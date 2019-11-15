@@ -6,10 +6,6 @@ const Hero = () => {
         <section className="hero">
             <Background />
             <div className="hero-content">
-                <h4 className="phone phone-hike">Hiking</h4>
-                <h4 className="phone phone-boat">Boating</h4>
-                <h4 className="phone phone-camp">Camping</h4>
-                <h4 className="phone phone-bike">Biking</h4>
                 <h1>Macondo National Park</h1>
                 <h3>Start Your Adventure</h3>
                 <div className="btns"> 
