@@ -413,5 +413,9 @@ header nav li{
         margin: auto;
     }
 
+    html{
+        overflow: scroll;
+    }
+
 
 }
