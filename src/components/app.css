@@ -54,6 +54,11 @@ a.btn:hover{
     opacity: 75%;
 }
 
+.background-a{
+    opacity: 100%;
+    cursor: default;
+}
+
 .btn i{
     margin: auto;
     transform: translateY(5px);

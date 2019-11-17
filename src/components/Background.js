@@ -3,7 +3,7 @@ import "./app.css"
 
 const Background = () => {
     return (
-        <div className="background"></div>
+        <a className="background-a" href="/"><div className="background"></div></a>
     )
 }
 
