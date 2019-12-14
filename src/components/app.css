@@ -2,420 +2,418 @@
 @import url("https://fonts.googleapis.com/css?family=Oswald");
 @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-*{
+html {
+  font: normal 16px sans-serif;
+  color: #252c57;
+  overflow: hidden;
+}
+
+nav {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  opacity: 0.75;
+  color: #535353;
+  cursor: pointer;
+}
+
+a:hover {
+  opacity: 1;
+}
+
+a.btn {
+  border-radius: 50%;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+  background-color: transparent;
+  opacity: 1;
+  height: 100px;
+  width: 100px;
+  display: block;
+  text-align: center;
+  margin: 0 auto 1.5vh auto;
+  border: 2px solid #1e2344;
+  border-radius: 50%;
+  cursor: pointer;
+  outline: none;
+  text-decoration: none;
+}
+
+a.btn:hover {
+  background-color: rgb(56, 97, 116);
+  opacity: 75%;
+}
+
+.btn i {
+  margin: auto;
+  transform: translateY(5px);
+}
+
+.btn-text {
+  margin-top: 40px;
+  transform: translateY(10px);
+  font-size: 15px;
+}
+
+.btn-text.camping {
+  transform: translateX(-5px) translateY(10px);
+}
+
+.btn-text.boating {
+  transform: translateX(-5px) translateY(10px);
+}
+
+.btns {
+  display: flex;
+}
+
+.grid {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+hr {
+  width: 250px;
+  height: 3px;
+  background-color: #3f51b5;
+  border: 0;
+  margin: 50px;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 0 80px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 35px 100px 0;
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+  color: #535353;
+  opacity: 0.75;
+}
+
+.brand {
+  font-family: "Quicksand", sans-serif;
+  opacity: 0.75;
+}
+
+.brand:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+header nav {
+  display: flex;
+  margin-right: -15px;
+}
+
+header nav li {
+  margin: 0 10px;
+}
+
+.background {
+  background-image: url(./main.jpg);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  z-index: -1;
+  background-color: #80a3db;
+}
+
+.hero {
+  position: relative;
+  justify-content: center;
+  text-align: center;
+  min-height: 100vh;
+  z-index: 0;
+}
+
+.hero h1 {
+  font-size: 60px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  font-family: "Oswald";
+  letter-spacing: 5px;
+}
+
+.hero h3 {
+  font-size: 30px;
+  font-weight: 100;
+  margin-bottom: 40px;
+  font-family: "Quicksand";
+}
+
+.hero a {
+  padding: 20px;
+  color: white;
+}
+
+.hero-content {
+  opacity: 0;
+  margin-top: 100px;
+  animation: 1s slidefade 1s forwards;
+}
+
+.detail-content {
+  color: #252c57;
+  animation: 1s slidefade 1s forwards;
+  opacity: 0;
+  margin-top: 50px;
+  height: 85vh;
+  width: 70vw;
+  background-color: rgba(255, 255, 255, 0.466);
+  border-radius: 3%;
+  line-height: 1.5;
+  overflow: auto;
+}
+
+.detail-content h2 {
+  font-size: 2.5em;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.exit {
+  float: right;
+  margin-top: 2%;
+  margin-right: 2%;
+  color: #1e2344;
+}
+
+.hiking-flex {
+  display: flex;
+  justify-content: left;
+  margin-top: 5%;
+}
+
+.hiking-detail a {
+  text-decoration: underline;
+}
+
+.detail h3 {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.detail li {
+  margin-left: 20%;
+  text-align: left;
+  font-size: 18px;
+  list-style: circle;
+}
+
+.detail img {
+  width: 45vw;
+  height: 50vh;
+  border-radius: 5%;
+  margin-top: 20px;
+}
+
+.section-end {
+  padding-bottom: 100px;
+}
+
+.detail a {
+  color: #535353;
+}
+
+.thoughtful-hiker {
+  margin-right: 50px;
+}
+
+.camping-detail a {
+  text-decoration: underline;
+}
+
+.campsite {
+  margin: 30px;
+}
+
+.campsite p {
+  margin: 0 100px;
+}
+
+.campsite button {
+  color: white;
+  padding: 10px;
+  background-color: #252c57;
+  font-family: sans-serif;
+  font-weight: 100;
+  margin: 10px;
+}
+
+.boating-detail {
+  display: flex;
+  flex: auto;
+}
+
+.boating-detail img {
+  min-width: 300px;
+  height: 450px;
+  margin-left: 30px;
+}
+
+.boating-detail h3 {
+  margin-top: 30px;
+  margin-right: 10px;
+}
+
+.boating-text {
+  margin-right: 20px;
+}
+
+.biking-text {
+  padding-bottom: 100px;
+  margin: 20px 100px;
+}
+
+.biking-text h3 {
+  margin-top: 30px;
+}
+
+.biking-detail a {
+  color: #535353;
+  text-decoration: underline;
+  font-size: 24px;
+}
+
+.columnOne,
+.columnTwo {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+@keyframes slidefade {
+  100% {
+    opacity: 0.9;
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html{
-    font: normal 16px sans-serif;
-    color: #252c57;
-    overflow: hidden;
-}
-
-nav{
-    list-style: none;
-}
-
-a{
-    text-decoration: none;
-    opacity: 0.75;
-    color: #535353;
-    cursor: pointer;
-}
-
-a:hover{
-    opacity: 1;
-}
-
-a.btn{
-    border-radius: 50%;
-    text-transform: uppercase;
-    font-weight: bold;
-    text-align: center;
-    background-color: transparent;
-    opacity: 1;
-    height: 100px;
-    width: 100px;
-    display: block;
-    text-align: center;
-    margin: 0 auto 1.5vh auto;
-    border: 2px solid #1e2344;
-    border-radius: 50%;
-    cursor: pointer;
-    outline: none;
-    text-decoration: none;
-}
-
-a.btn:hover{
-    background-color: rgb(56, 97, 116);
-    opacity: 75%;
-}
-
-.btn i{
-    margin: auto;
-    transform: translateY(5px);
-}
-
-.btn-text{
-    margin-top: 40px;
-    transform: translateY(10px);
-    font-size: 15px;
-}
-
-.btn-text.camping{
-    transform: translateX(-5px) translateY(10px);
-}
-
-.btn-text.boating{
-    transform: translateX(-5px) translateY(10px);
-}
-
-.btns{
-    display: flex;
-}
-
-.grid{
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-hr{
-    width: 250px;
-    height: 3px;
-    background-color: #3f51b5;
-    border: 0;
-    margin: 50px;
-}
-
-section{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 100px 0 80px;
-}
-
-header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 35px 100px 0;
-    opacity: 0;
-    position: absolute;
-    width: 100%;
-    z-index: 1;
-    color: #535353;
-    opacity: 0.75;
-}
-
-.brand{
-    font-family: "Quicksand", sans-serif;
-    opacity: 0.75;
-}
-
-.brand:hover{
-    opacity: 1;
-    cursor: pointer;
-}
-
-header nav{
-    display: flex;
-    margin-right: -15px;
-}
-
-header nav li{
-    margin: 0 10px;
-}
-
-.hero{
-    position: relative;
-    justify-content: center;
-    text-align: center;
-    min-height: 100vh;
-    z-index: 0;
-}
-
-.hero .background{
-    background-image: url(./main.jpg);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    z-index: -1;
-    background-color: #80a3db;
-}
-
-.hero h1{
-    font-size: 60px;
-    font-weight: bold;
-    margin-bottom: 15px;
-    font-family: "Oswald";
-    letter-spacing: 5px;
-}
-
-.hero h3{
-    font-size: 30px;
-    font-weight: 100;
-    margin-bottom: 40px;
-    font-family: "Quicksand";
-}
-
-.hero a{
-    padding: 20px;
-    color: white;
-}
-
-.hero-content{
-    opacity: 0;
-    margin-top: 100px;
-    animation: 1s slidefade 1s forwards;
-}
-
-.detail-content{
-    color: #252c57;
-    animation: 1s slidefade 1s forwards;
-    opacity: 0;
-    margin-top: 50px;
-    height: 85vh;
-    width: 70vw;
-    background-color: rgba(255, 255, 255, 0.466);
-    border-radius: 3%;
-    line-height: 1.5;
-    overflow: auto;
-}
-
-.detail-content h2{
-    font-size: 2.5em;
-    margin-top: 30px;
-    margin-bottom: 20px;
-}
-
-.exit{
-    float: right;
-    margin-top: 2%;
-    margin-right: 2%;
-    color: #1e2344;
-}
-
-.hiking-flex{
-    display: flex;
-    justify-content: left;
-    margin-top: 5%;
-}
-
-.hiking-detail a{
-    text-decoration: underline;
-}
-
-.detail h3{
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.detail li{
-    margin-left: 20%;
-    text-align: left;
-    font-size: 18px;
-    list-style: circle;
-}
-
-.detail img{
-    width: 45vw;
-    height: 50vh;
-    border-radius: 5%;
-    margin-top: 20px;
-}
-
-.section-end{
-    padding-bottom: 100px;
-}
-
-.detail a{
-    color: #535353;
-}
-
-.thoughtful-hiker{
-    margin-right: 50px;
-}
-
-.camping-detail a{
-    text-decoration: underline;
-}
-
-.campsite{
-    margin: 30px;
-}
-
-.campsite p{
-    margin: 0 100px;
-}
-
-.campsite button{
-    color: white;
-    padding: 10px;
-    background-color: #252c57;
-    font-family: sans-serif;
-    font-weight: 100;
-    margin: 10px;
-}
-
-.boating-detail{
-    display: flex;
-    flex: auto;
-}
-
-.boating-detail img{
-    min-width: 300px;
-    height: 450px;
-    margin-left: 30px;
-}
-
-.boating-detail h3{
-    margin-top: 30px;
-    margin-right: 10px;
-}
-
-.boating-text{
-    margin-right: 20px;
-}
-
-.biking-text{
-    padding-bottom: 100px;
-    margin: 20px 100px;
-}
-
-.biking-text h3{
-    margin-top: 30px;
-}
-
-.biking-detail a{
-    color: #535353;
-    text-decoration: underline;
-    font-size: 24px;
-}
-
-.columnOne, .columnTwo{
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-}
-
-@keyframes slidefade{
-    100%{
-        opacity: .9;
-        margin: 0;
-    }
+  }
 }
 
 @media screen and (max-width: 992px) {
-    .detail-content{
-        width: 90vw;
-    }
+  .detail-content {
+    width: 90vw;
+  }
 
-    .boating-detail{
-        display: flex;
-        flex-direction: column;
-    }
+  .boating-detail {
+    display: flex;
+    flex-direction: column;
+  }
 
-    .detail img{
-        width: 60vw;
-        height: 40vh;
-        border-radius: 5%;
-        margin-top: 20px;
-    }
+  .detail img {
+    width: 60vw;
+    height: 40vh;
+    border-radius: 5%;
+    margin-top: 20px;
+  }
 
-    header{
-        padding-left: 3%;
-        padding-right: 3%;
-    }
+  header {
+    padding-left: 3%;
+    padding-right: 3%;
+  }
 }
 
 @media screen and (max-width: 480px) {
+  header {
+    flex-direction: column;
+    padding-top: 1%;
+    flex-basis: auto;
+  }
 
-    header{
-        flex-direction: column;
-        padding-top: 1%;
-        flex-basis: auto;
-    }
+  .hero a {
+    margin-bottom: 50px;
+    margin-top: 20px;
+  }
 
-    .hero a{
-        margin-bottom: 50px;
-        margin-top: 20px;
-    }
+  .btns {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+  }
 
-    .btns {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        width: 100%;
-    }
+  .hero h1 {
+    margin-bottom: 5px;
+  }
 
-    .hero h1{
-        margin-bottom: 5px;
-    }
+  .hero h3 {
+    margin-bottom: 5px;
+  }
 
-    .hero h3{
-        margin-bottom: 5px;
-    }
+  .columnOne,
+  .columnTwo {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+  }
 
-    .columnOne, .columnTwo{
-        display: flex;
-        flex-direction: column;
-        flex-basis: 100%;
-        flex: 1;
-    }
+  .detail-content {
+    width: 90vw;
+  }
 
-    .detail-content{
-        width: 90vw;
-    }
+  .boating-detail {
+    display: flex;
+    flex-direction: column;
+  }
 
-    .boating-detail{
-        display: flex;
-        flex-direction: column;
-    }
+  .detail img {
+    width: 70vw;
+    height: 50vh;
+    border-radius: 5%;
+    margin-top: 20px;
+  }
 
-    .detail img{
-        width: 70vw;
-        height: 50vh;
-        border-radius: 5%;
-        margin-top: 20px;
-    }
+  .hiking-detail a {
+    text-decoration: underline;
+    display: flex;
+    flex-direction: column;
+  }
 
-    .hiking-detail a{
-        text-decoration: underline;
-        display: flex;
-        flex-direction: column;
-    }
+  .hiking-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    margin-top: 5%;
+  }
 
-    .hiking-flex{
-        display: flex;
-        flex-direction: column;
-        justify-content: left;
-        margin-top: 5%;
-    }
+  .biking-text {
+    padding-bottom: 100px;
+    margin: 20px 0;
+  }
 
-    .biking-text{
-        padding-bottom: 100px;
-        margin: 20px 0;
-    }
-    
-    .campsite p{
-        margin: 0 10px;
-    }
+  .campsite p {
+    margin: 0 10px;
+  }
 
-    .boating-detail img{
-        margin: auto;
-    }
+  .boating-detail img {
+    margin: auto;
+  }
 
-    html{
-        overflow: scroll;
-    }
-
-
+  html {
+    overflow: scroll;
+  }
 }
