@@ -2,11 +2,12 @@
 
 An informational website for a fictional national park made using react.
 
-Note: sometimes Heroku and fontawesome do not get along.  Refreshing the page usually fixes this.
+Note: sometimes Heroku and Font Awesome do not get along.  Refreshing the page usually fixes this.
 
 ### Technologies
 * React 16.11.0
 * React-Router-DOM 5.1.2
+* Font Awesome 5.12.0
 
 ### Installing
 
