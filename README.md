@@ -15,7 +15,7 @@ Note: sometimes Heroku and Font Awesome do not get along.  Refreshing the page u
 
 1. Clone the repo into a folder
 > git clone https://github.com/R-Currie/park.git
-2. Run npm install inside streams root
+2. Run npm install
 > npm install
 3. Start server
 > npm start
