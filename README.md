@@ -7,9 +7,10 @@ An informational website for a fictional national park made using react.
 Note: sometimes Heroku and Font Awesome do not get along.  Refreshing the page usually fixes this.
 
 ### Technologies
-* React 16.11.0
-* React-Router-DOM 5.1.2
-* Font Awesome 5.12.0
+* [React](https://reactjs.org/) 16.11.0
+* [React-Router-DOM](https://reacttraining.com/react-router/web/guides/quick-start) 5.1.2
+* [Font Awesome](https://fontawesome.com/) 5.12.0
+* [Create React App](https://facebook.github.io/create-react-app/docs/getting-started)
 
 ### Installing
 
@@ -20,9 +21,3 @@ Note: sometimes Heroku and Font Awesome do not get along.  Refreshing the page u
 3. Start server
 > npm start
 4. Enjoy!
-
-### Learn More About React
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
