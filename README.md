@@ -6,6 +6,8 @@ An informational website for a fictional national park made using react.
 
 Note: sometimes Heroku and Font Awesome do not get along.  Refreshing the page usually fixes this.
 
+![Park Demo](https://i.imgur.com/sxjeHEo.gif)
+
 ### Technologies
 * [React](https://reactjs.org/) 16.11.0
 * [React-Router-DOM](https://reacttraining.com/react-router/web/guides/quick-start) 5.1.2
