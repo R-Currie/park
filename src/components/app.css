@@ -343,6 +343,10 @@ header nav li {
     flex-basis: auto;
   }
 
+  .hero {
+    height: 100%;
+  }
+
   .hero a {
     margin-bottom: 50px;
     margin-top: 20px;
