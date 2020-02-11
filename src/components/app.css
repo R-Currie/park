@@ -348,7 +348,10 @@ header nav li {
   }
 
   .background {
-    background-size: 100% auto;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 
   .hero a {
