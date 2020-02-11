@@ -348,7 +348,7 @@ header nav li {
   }
 
   .background {
-    background-size: auto;
+    background-size: 100% auto;
   }
 
   .hero a {
