@@ -348,6 +348,7 @@ header nav li {
   }
 
   .background {
+    height: 150vh;
     background-position: center center;
     background-attachment: fixed;
     background-size: cover;
